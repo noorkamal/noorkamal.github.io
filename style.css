@@ -1,38 +1,39 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
     color: #333;
-    text-align: center;
-    padding: 50px;
-}
-
-h1 {
-    color: #0077cc;
-}
-
-p {
-    font-size: 18px;
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 600px;
-    background: white;
+    max-width: 1100px;
+    margin: 40px auto;
     padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
+/* Navigation Bar */
 nav {
-    background: #0077cc;
-    padding: 10px 0;
+    background: #005fa3;
+    padding: 15px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    text-align: center;
 }
 
 nav ul li {
@@ -44,37 +45,20 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Make the container responsive */
-.container {
-    max-width: 90%;
-    padding: 20px;
+/* Headings */
+h1, h2 {
+    color: #005fa3;
+    margin-bottom: 20px;
 }
 
-/* Adjust navigation for smaller screens */
-@media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
+/* CTA Button */
 .cta-button {
     display: inline-block;
     background: #0077cc;
@@ -89,5 +73,23 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background: #005fa3;
+    background: #004f80;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
