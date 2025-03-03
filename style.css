@@ -74,3 +74,20 @@ nav ul li a:hover {
         font-size: 16px;
     }
 }
+
+.cta-button {
+    display: inline-block;
+    background: #0077cc;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #005fa3;
+}
