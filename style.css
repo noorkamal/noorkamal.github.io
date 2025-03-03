@@ -93,3 +93,24 @@ h1, h2 {
         margin: 10px 0;
     }
 }
+
+.process {
+    margin-top: 40px;
+    padding: 20px;
+    background: #eef7ff;
+    border-left: 5px solid #0077cc;
+    border-radius: 8px;
+}
+
+.process h2 {
+    color: #005fa3;
+}
+
+.process ol {
+    padding-left: 20px;
+}
+
+.process ol li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
