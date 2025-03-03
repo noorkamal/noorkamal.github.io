@@ -49,3 +49,28 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Make the container responsive */
+.container {
+    max-width: 90%;
+    padding: 20px;
+}
+
+/* Adjust navigation for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
