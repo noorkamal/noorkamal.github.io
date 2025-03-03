@@ -10,19 +10,9 @@
 }
 
 body {
-    background: #0d0d0d;
-    color: #e0e0e0;
+    background: #0d0d0d;  /* Dark Background */
+    color: #e0e0e0;  /* Light Text */
     line-height: 1.6;
-}
-
-/* Container */
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #1a1a1a;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
 }
 
 /* Hero Section with Background Image */
@@ -31,17 +21,31 @@ body {
     width: 100%;
     height: 400px;
     background: url('hero-image.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Dark Overlay to Ensure Readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+/* Hero Text Styling */
 .hero-text {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 8px;
+    position: relative;
     text-align: center;
     color: white;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .hero-text h1 {
@@ -106,10 +110,18 @@ h1, h2 {
 }
 
 /* Process Section */
-.process {
-    margin-top: 40px;
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
     padding: 20px;
     background: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.process {
+    padding: 20px;
+    background: #222;
     border-left: 5px solid #8a2be2;
     border-radius: 8px;
 }
